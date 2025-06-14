@@ -1,0 +1,82 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+}
+
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 150px;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+ 
+.sidebar a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    position: relative;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="sidebar">
+  <a href="https://zhipengliumath.github.io">Home</a>
+  <a href="https://zhipengliumath.github.io/cv">CV</a>
+  <a href="https://zhipengliumath.github.io/research">Research</a>
+  <a class="active" href="https://zhipengliumath.github.io/teaching">Teaching and advising</a>
+  <a href="https://zhipengliumath.github.io/seminar">Seminar</a>
+</div>
+<div class="content">
+    <h3>Current teaching</h3>
+    <p>In Spring 2025, I am teaching Math 996: Random matrices, random growths and related topics.</p>
+<h3>Advising</h3>
+   <h5>Current PhD students</h5>
+   <p><a href="https://mathematics.ku.edu/people/yechan-hong">Yechan Hong</a>, <a href="https://mathematics.ku.edu/people/chen-ma">Chen Ma</a>, <a href="https://mathematics.ku.edu/people/aaron-ortiz">Aaron Ortiz</a></p>
+   <h5>Former PhD students</h5>
+   <p>2024 <a href="https://sites.google.com/view/rayzhang">Ray Zhang</a>, currently a postdoc at the University of Utah.</p>
+</div>
+</body>
+
+
+</html>
