@@ -1,0 +1,80 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+}
+
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 150px;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+ 
+.sidebar a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    position: relative;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="sidebar">
+  <a class="active" href="https://zhipengliumath.github.io">Home</a>
+  <a href="https://zhipengliumath.github.io/cv">CV</a>
+  <a href="https://zhipengliumath.github.io/research">Research</a>
+  <a href="https://zhipengliumath.github.io/teaching">Teaching and advising</a>
+  <a href="https://zhipengliumath.github.io/seminar">Seminar</a>
+</div>
+
+<div class="content">
+  <h2>Zhipeng Liu</h2>
+  <p>I am an associate professor of <a href="https://mathematics.ku.edu/">the department of mathematics</a> at <a href="https://www.ku.edu/">the University of Kansas</a>. </p>
+
+  <p>Office: 526 Snow Hall</p>
+  <p>Email: zhipeng at ku dot edu</p>
+</div>
+
+</body>
+</html>
