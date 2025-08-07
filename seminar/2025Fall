@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <title>KU Probability and Statistics Seminar (2025 Fall)
+        </title>
+    </head>
+</html>
+
+<body>
+ <style type="text/css">.hidden{
+    display:none;
+}
+.unhidden{
+    display:block;
+}
+</style>
+
+<style>
+      table,
+      th,
+      td {
+        padding: 10px;
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+    </style>
+    
+<script type="text/javascript">
+    function unhide(divID, otherDivId) {
+    var item = document.getElementById(divID);
+    if (item) {
+            item.className=(item.className=='hidden')?'unhidden':'hidden';
+        }
+        document.getElementById(otherDivId).className = 'hidden';
+    }
+</script>
+<p><span style="font-size: 30px;">KU Probability and Statistics Seminar (Fall 2024)</span></p>
+
+<p><span style="font-size:20px;">The seminars are held at Snow 306 on Wednesdays 4pm-5pm. We may provide online seminars if the speaker prefers. </span></p>
+<p><span style="font-size:20px;">If you are interested in giving a talk, please contact <a href="https://zhipengliumath.github.io">Zhipeng Liu</a>.</span></p>
+<p><span style="font-size:20px;">
+  <a href="https://zhipengliumath.github.io/seminar">Seminar website</a>&nbsp;&nbsp;&nbsp; <a href="https://zhipengliumath.github.io">Homepage</a></span></p>
+
+
+<table  style="width:75%">
+	<tbody>
+		<tr>
+			<th style="width: 10%; font-size:20px;"><b>Date</b></th>
+			<th><span style="width:90%; font-size:20px;">Title/Abstract</span></th>
+		</tr>
+
+<tr>
+			<td style="width: 3px;"><span style="font-size:14px;">Aug 20
+			</td>
+			<td style="width: 20px;">
+			  <p>  			     
+			    TBA</p>
+			</td>
+</tr>
+
+
+	</tbody>
+</table>
+</body>
