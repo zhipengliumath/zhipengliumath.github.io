@@ -58,13 +58,19 @@ div.content {
   }
 }
 ol.publications {
-  padding-left: 20px;
+  padding-left: 22px;
+  counter-reset: pub-counter;
 }
 ol.publications li {
-  margin-bottom: 18px;
+  margin-bottom: 20px;
+  position: relative;
 }
-ol.publications li b {
+ol.publications li:before {
+  counter-increment: pub-counter;
+  content: counter(pub-counter) ". ";
   font-weight: bold;
+  position: absolute;
+  left: -22px;
 }
 </style>
 </head>
