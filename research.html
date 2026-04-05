@@ -62,16 +62,12 @@ ol.publications {
   counter-reset: pub-counter 22;   /* Total papers = 21, so start counter at 22 */
 }
 ol.publications li {
-  margin-bottom: 20px;
-  position: relative;
-  padding-left: 5px;
+  margin-bottom: 20px;  
 }
 ol.publications li:before {
   counter-increment: pub-counter -1;   /* Count backwards */
   content: counter(pub-counter) ". ";
-  font-weight: bold;
-  position: absolute;
-  left: -25px;
+  font-weight: bold; 
 }
 </style>
 </head>
