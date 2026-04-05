@@ -58,15 +58,23 @@ div.content {
   }
 }
 ol.publications {
-  padding-left: 25px;
-  counter-reset: pub-counter 22;   /* Total papers = 21, so start counter at 22 */
+  list-style: none;          /* Removes default browser numbering */
+  padding-left: 30px;
+  counter-reset: pub-counter 22;   /* 21 papers → start at 22 so first becomes 21 */
 }
 ol.publications li {
-  margin-bottom: 20px;  
+  margin-bottom: 22px;
+  position: relative;
+  padding-left: 8px;
 }
 ol.publications li:before {
-  counter-increment: pub-counter -1;   /* Count backwards */
-  font-weight: bold; 
+  counter-increment: pub-counter -1;   /* Counts backwards: 21, 20, ..., 1 */
+  content: counter(pub-counter) ". ";
+  font-weight: bold;
+  position: absolute;
+  left: -28px;
+  width: 25px;
+  text-align: right;
 }
 </style>
 </head>
