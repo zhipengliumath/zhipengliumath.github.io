@@ -51,7 +51,7 @@ div.content {
   }
 }
 
-/* Publication list styling - updated */
+/* Publication list styling */
 ol.publications {
   list-style: none;
   padding-left: 38px;
@@ -69,12 +69,10 @@ ol.publications li .pub-number {
   text-align: right;
 }
 
-/* New: Special items that should NOT be numbered */
-ol.publications li.special {
-  padding-left: 0;   /* No indentation for the number */
-}
+/* Special dissertation entry - shows "0." and stands out */
 ol.publications li.special .pub-number {
-  display: *;     /* Hide the number completely */
+  color: #04AA6D;           /* nice green like your sidebar */
+  font-size: 1.1em;
 }
 </style>
 </head>
@@ -179,7 +177,6 @@ ol.publications li.special .pub-number {
 
 <li class="special">
         <span class="pub-number"></span>
-        <span style="color:#04AA6D; font-size:1.3em;">★</span>
         <b>Discrete Toeplitz determinants and their applications</b>.<br>
         <i>PhD dissertation</i>, University of Michigan, May 2014. 
         PDF available upon request.
@@ -196,26 +193,26 @@ ol.publications li.special .pub-number {
 </div>
 
 <script type="text/javascript">
-    // Automatic reverse numbering - ONLY for regular publications
+    // Automatic reverse numbering for regular publications + special "0" for dissertation
     window.onload = function() {
         var list = document.getElementById('pubList');
         var items = list.getElementsByTagName('li');
         var pubCount = 0;
 
-        // First pass: count only regular publications
+        // Count only regular (non-special) publications
         for (var i = 0; i < items.length; i++) {
             if (!items[i].classList.contains('special')) {
                 pubCount++;
             }
         }
 
-        // Second pass: assign numbers only to regular items (reverse order)
+        // Assign numbers: regular papers get reverse numbering, special gets "0."
         var currentNumber = pubCount;
         for (var i = 0; i < items.length; i++) {
             var numberSpan = items[i].querySelector('.pub-number');
             if (numberSpan) {
                 if (items[i].classList.contains('special')) {
-                    numberSpan.textContent = '';           // no number
+                    numberSpan.textContent = "0. ";
                 } else {
                     numberSpan.textContent = currentNumber + ". ";
                     currentNumber--;
