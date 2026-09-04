@@ -41,12 +41,26 @@ div.content {
   height: 1000px;
 }
   
+.bio-photo {
+  margin: 0; /* Clears browser default figure margins */
+  width: 240px;
+  flex-shrink: 0;
+  text-align: center;
+}
+
 .profile-photo {
-  width: 180px;
+  width: 100%;
   height: auto;
-  float: right;
-  margin: 0 0 20px 20px;
+  display: block; /* Removes tiny extra gap underneath images */
   border-radius: 6px;
+}
+
+.photo-credit {
+  font-size: 0.8em;
+  color: #666;
+  margin-top: 6px;
+  margin-bottom: 0;
+  line-height: 1.2;
 }
   
 @media screen and (max-width: 700px) {
